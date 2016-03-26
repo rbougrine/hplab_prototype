@@ -1,0 +1,15 @@
+C:\Andriod\Unity\test\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+C:\Andriod\Unity\test\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+C:\Andriod\Unity\test\Temp\UnityVS_bin\Debug\Assembly-UnityScript-firstpass.dll
+C:\Andriod\Unity\test\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\Andriod\Unity\test\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\Andriod\Unity\test\Temp\UnityVS_bin\Debug\UnityEngine.Networking.dll
+C:\Andriod\Unity\test\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+C:\Andriod\Unity\test\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Andriod\Unity\test\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\Andriod\Unity\test\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+C:\Andriod\Unity\test\Temp\UnityVS_bin\Debug\UnityEngine.Networking.xml
+C:\Andriod\Unity\test\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\Andriod\Unity\test\Temp\UnityVS_obj\Debug\test.CSharp.csprojResolveAssemblyReference.cache
+C:\Andriod\Unity\test\Temp\UnityVS_obj\Debug\Assembly-CSharp.dll
+C:\Andriod\Unity\test\Temp\UnityVS_obj\Debug\Assembly-CSharp.pdb
