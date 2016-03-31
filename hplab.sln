@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hplab.CSharp.Plugins", "hplab.CSharp.Plugins.csproj", "{BA20670F-1EAF-C0FD-E3FE-510A3BE4DA9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hplab.CSharp", "hplab.CSharp.csproj", "{22363F2C-F824-21BE-344B-34F7DA313D54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hplab.CSharp.Editor", "hplab.CSharp.Editor.csproj", "{8F3376EE-98D9-98A7-141D-F45C30510D90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA20670F-1EAF-C0FD-E3FE-510A3BE4DA9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA20670F-1EAF-C0FD-E3FE-510A3BE4DA9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA20670F-1EAF-C0FD-E3FE-510A3BE4DA9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA20670F-1EAF-C0FD-E3FE-510A3BE4DA9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22363F2C-F824-21BE-344B-34F7DA313D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22363F2C-F824-21BE-344B-34F7DA313D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22363F2C-F824-21BE-344B-34F7DA313D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22363F2C-F824-21BE-344B-34F7DA313D54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F3376EE-98D9-98A7-141D-F45C30510D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3376EE-98D9-98A7-141D-F45C30510D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F3376EE-98D9-98A7-141D-F45C30510D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3376EE-98D9-98A7-141D-F45C30510D90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

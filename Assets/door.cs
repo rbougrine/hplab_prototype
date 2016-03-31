@@ -1,13 +1,11 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class door : MonoBehaviour
 {
     public bool doorisClosed;
     public Animator anim;
-
-
+     
     void Awake()
     {
         anim = GetComponent<Animator>();
