@@ -11,8 +11,8 @@ public class LoadingScript : MonoBehaviour {
 	void Start () {
 
 		loadingBar.fillAmount = 0;
-	
-	}
+        
+    }
 
 
 	void Update () {
