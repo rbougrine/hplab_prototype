@@ -5,7 +5,7 @@ public class door : MonoBehaviour
 {
     public bool doorisClosed;
     public Animator anim;
-     
+
     void Awake()
     {
         anim = GetComponent<Animator>();
@@ -13,24 +13,27 @@ public class door : MonoBehaviour
 
     void Update()
     {
-        
+       
     }
 
-    IEnumerator OnTriggerEnter(Collider collision)
+    public void doorAction()
     {
-        if (collision.gameObject.name == "First Person Controller")
-        {
+   
+        StartCoroutine(doorMovement());
 
-             if (doorisClosed == true)
-              {
-                anim.Play("openDoor");
-                doorisClosed = false;
-                yield return new WaitForSeconds(10);
-                anim.Play("closeDoor");
-                doorisClosed = true;
-              }
-            
-            }
-        }
+
     }
+    IEnumerator doorMovement()
+    {
+        if (doorisClosed == true)
+        {
+            anim.Play("openDoor");
+            doorisClosed = false;
+            yield return new WaitForSeconds(5);
+            anim.Play("closeDoor");
+            doorisClosed = true;
+        }
+
+    }
+}   
  
