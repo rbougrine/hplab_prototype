@@ -2,66 +2,83 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class paint : MonoBehaviour {
+public class paint : MonoBehaviour
+{
 
-    public GameObject wall_front;
-    public GameObject wall_back;
-    public GameObject wall_right;
-    public GameObject wall_left;
+    Color paintColor = Color.white;
+    GameObject toBePaintedObject;
+    public GameObject Camera;
 
-    public GameObject paintRed;
-    public GameObject paintBlue;
-   
+
+
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
 
-     
+
     }
-	
-	// Update is called once per frame
-	void Update () {
 
-        if (Input.GetButtonDown("Jump"))
+    // Update is called once per frame
+    void Update()
+    {
+
+
+
+    }
+
+    /*
+     If its a object that can be painted on
+     then saves clicked object in variable toBePainted.
+     */
+    public void chosenObject()
+    {
+        RaycastHit hit;
+
+
+        if (Physics.Raycast(Camera.transform.position, Camera.transform.forward, out hit, Mathf.Infinity))
         {
-            var Colour = paintRed.transform.GetComponent<Renderer>().material.color;
-            Debug.Log(Colour);
-          // paintRed.transform.GetComponent<Renderer>().material.color = Color.green;
-          
+            var ObjectParent = hit.collider.gameObject.transform.parent.parent.name;
 
+            switch (ObjectParent)
+            {
+                case "Painting":
+                    toBePaintedObject = hit.collider.gameObject;
+                 //   Debug.Log(toBePaintedObject + "to be painted");
+                    break;
+                case "paintBucket":
+                    paintColor = Color.blue;
+                //    Debug.Log(paintColor + "Paint color");
+                    break;
+            }
+
+            if (toBePaintedObject != null && paintColor != Color.white)
+            {
+                paintBlue(toBePaintedObject, paintColor);
+            }
+            else {
+              //  Debug.Log("not done yet");
+            }
         }
-    }
+   }
+   
+    /*
+      Gets variable paintColor and toBePainted and paints the chosen object 
+      the given color.
+    */
+    void paintBlue(GameObject toBePaintedObject, Color paintColor)
+    {
 
-        public void paintGreen() {
-        paintRed.transform.GetComponent<Renderer>().material.color = Color.green;
-        Debug.Log("WORKSSSSSSSSSSSSS");
-    }
-
-
-
-
-
-    //choosing buckets
-    void onTriggerEnter() {
-
-        if (Input.GetKeyDown(KeyCode.F))
+        RaycastHit hit;
+        if (Physics.Raycast(Camera.transform.position, Camera.transform.forward, out hit, Mathf.Infinity))
         {
+            if (hit.collider.gameObject.transform.parent.parent.name == "Painting")
+            {
+                toBePaintedObject.transform.Find("Left").GetComponent<Renderer>().material.color = Color.blue;
 
-         
-
-
-        } else if (Input.GetKeyDown(KeyCode.G))
-        
-        {
-
-
-
-
-
+            }
         }
 
 
-
     }
-
-
 }
+
